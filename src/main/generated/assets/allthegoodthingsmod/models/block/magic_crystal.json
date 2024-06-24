@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "allthegoodthingsmod:block/magic_crystal"
+  }
+}

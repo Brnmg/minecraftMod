@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "allthegoodthingsmod:item/knight_killer"
+  }
+}

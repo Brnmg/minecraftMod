@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"id": "allthegoodthingsmod",
+	"version": "1.0",
+	"name": "All the Good Things Mod!",
+	"description": "All the things you miss in one single mod",
 	"authors": [
 		"Me!"
 	],
@@ -12,23 +12,19 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/allthegoodthingsmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+			"com.allthegoodthingsmod.ModDataGenerator"
+		],
 		"main": [
-			"com.example.ExampleMod"
+			"com.allthegoodthingsmod.ExampleMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.allthegoodthingsmod.ExampleModClient"
 		]
 	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.21",

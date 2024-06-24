@@ -22,12 +22,16 @@ loom {
     splitEnvironmentSourceSets()
 
 	mods {
-		"modid" {
+		"allthegoodthingsmod" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
 	}
 
+}
+
+fabricApi {
+	configureDataGeneration()
 }
 
 dependencies {
